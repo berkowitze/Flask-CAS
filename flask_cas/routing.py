@@ -54,6 +54,7 @@ def login():
             del flask.session[cas_token_session_key]
 
     current_app.logger.debug('Redirecting to: {0}'.format(redirect_url))
+    breakpoint()
 
     return flask.redirect(redirect_url)
 
